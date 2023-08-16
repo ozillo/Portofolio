@@ -1,0 +1,114 @@
+/* PALETTE */
+:root {
+    --background-color: #070208;
+    --primary-color: #ffffff;
+    --secondary-color: #bebebe;
+    --typography-h1: 30px;
+    --typography-h2: 32px;
+    --typography-h3-a: 14px;
+    --typography-p: 13.6px;
+  }
+  
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica", sans-serif;
+  }
+
+    /* GLOBAL STYLES */
+    body {
+        background-color: var(--background-color);
+        color: var(--primary-color);
+        font-size: var(--typography-p);
+        letter-spacing: 1.5px;
+      }
+
+        /* HEADER */
+  header {
+    height: 10vh;
+    display: flex;
+    background-color: var(--background-color);
+    align-items: center;
+    justify-content: space-around;
+  }
+  .logo{
+    margin-top: 6rem;
+    height: 150px;
+    width: 300px;
+  }
+  
+  header ul {
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+  }
+  
+  header a {
+    text-decoration: none;
+    font-size: 30px;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header a::after {
+    content: "";
+    background-color: var(--primary-color);
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  header a:hover::after {
+    width: 100%;
+  }
+
+  .logo img {
+    margin-top: 12rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation: banner 6s;
+  }
+  
+  main {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  section .banner{
+    height: 340px;
+    width: 1342px;
+    background-image: url("https://res.cloudinary.com/dw9b8eqmc/image/upload/v1692204162/punk/Captura_de_pantalla_2023-08-16_a_las_18.42.07_pgsdzp.png");
+    background-color: #cccccc;
+  }
+
+  .moving-container {
+    display: inline-block;
+    position: relative;
+}
+
+.moving-container span {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 18px;
+    animation: moveToLeft 5s infinite linear;
+}
+
+@keyframes moveToLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100px); /* Adjust the distance as needed */
+    }
+}
+
+
+
+
+
+
