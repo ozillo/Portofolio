@@ -1,14 +1,4 @@
-/* PALETTE */
-:root {
-    --background-color: #070208;
-    --primary-color: #ffffff;
-    --secondary-color: #bebebe;
-    --typography-h1: 30px;
-    --typography-h2: 32px;
-    --typography-h3-a: 14px;
-    --typography-p: 13.6px;
-  }
-  
+
 
   * {
     margin: 0;
@@ -17,13 +7,7 @@
     font-family: "Helvetica", sans-serif;
   }
 
-    /* GLOBAL STYLES */
-    body {
-        background-color: var(--background-color);
-        color: var(--primary-color);
-        font-size: var(--typography-p);
-        letter-spacing: 1.5px;
-      }
+
 
         /* HEADER */
   header {
@@ -35,9 +19,9 @@
   }
   .logo{
     display:flex;
-    margin-top: 1rem;
-    height: 100px;
-    width: 200px;
+    margin-top: 6rem;
+    height: 200px;
+    width: 300px;
   }
   
   header ul {
@@ -49,7 +33,7 @@
   header a {
     text-decoration: none;
     font-size: 20px;
-    color: inherit;
+    color: aliceblue;
     display: flex;
     flex-direction: column;
   }
@@ -79,6 +63,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: #0a0a0a;
   }
  .banner{
   display: flex;
@@ -88,9 +73,16 @@
    
   }
 
+  .banner h1{
+    font-size: 20px;
+    color:aliceblue;
+    background-color: #0a0a0a;
+  }
+
   .moving-container {
     display: inline-block;
     position:relative;
+   
    
 }
 
@@ -98,6 +90,7 @@
     display: inline-block;
     margin: 0 10px;
     font-size: 18px;
+    color: aliceblue;
     flex-direction: column;
     animation: moveToLeft 8s infinite linear;
  
@@ -111,6 +104,7 @@
         transform: translateX(100px); /* Adjust the distance as needed */
     }
 }
+
 
 .banner-social{
 display:flex;
