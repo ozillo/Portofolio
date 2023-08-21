@@ -40,7 +40,7 @@
   
   header a::after {
     content: "";
-    background-color: var(--primary-color);
+ 
     width: 0;
     height: 2px;
     transition: all 0.3s ease-in-out;
@@ -51,11 +51,10 @@
   }
 
   .logo img {
-    margin-top: 12rem;
+    margin-top: 10rem;
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    animation: banner 6s;
+    animation: banner 9s;
   }
   
   main {
@@ -66,18 +65,25 @@
     background-color: #0a0a0a;
   }
  .banner{
-  display: flex;
-    height: 340px;
+    display: flex;
     width: 1920px;
     background-image: url("https://res.cloudinary.com/dw9b8eqmc/image/upload/v1692272448/punk/banner1_niwlgz.png");
    
   }
 
+  .banner span{
+    font-family:Arial, Helvetica, sans-serif;
+    position:-webkit-sticky;
+  }
+
   .banner h1{
     font-size: 20px;
+    margin-bottom: 10px;
     color:aliceblue;
     background-color: #0a0a0a;
   }
+
+  
 
   .moving-container {
     display: inline-block;
@@ -108,11 +114,13 @@
 
 .banner-social{
 display:flex;
+height: 539px;
+width: 1217px;
 justify-content: center;
 align-items: center;
 margin: 2rem;
 padding: 2rem;
-background-color: aliceblue;
+background-color: #0a0a0a;
 }
 
 
@@ -129,6 +137,7 @@ footer {
   display: flex;
   margin: 2rem;
   font-size: 20px;
+  color: aliceblue;
 }
 
 
